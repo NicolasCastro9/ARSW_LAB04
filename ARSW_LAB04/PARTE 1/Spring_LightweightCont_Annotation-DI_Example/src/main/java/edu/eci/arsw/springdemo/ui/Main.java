@@ -18,7 +18,9 @@ public class Main {
     public static void main(String a[]) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
         GrammarChecker gc = ac.getBean(GrammarChecker.class);
-        System.out.println(gc.check("la la la "));
+        String textToCheck = "This is an example ";
+        String result = gc.check(textToCheck);
+        System.out.println("Result: " + result);
     }
 
 }
