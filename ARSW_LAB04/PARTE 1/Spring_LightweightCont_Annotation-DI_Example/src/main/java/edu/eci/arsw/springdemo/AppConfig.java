@@ -11,13 +11,13 @@ public class AppConfig {
     public GrammarChecker grammarChecker() {
         return new GrammarChecker();
     }
-    @Primary
+    //@Primary
     @Bean
     public SpellChecker englishSpellChecker() {
         return new EnglishSpellChecker();
     }
 
-    // @Primary
+    @Primary
     @Bean
     public SpellChecker spanishSpellChecker() {
         return new SpanishSpellChecker();
